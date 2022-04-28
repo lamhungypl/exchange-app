@@ -1,0 +1,38 @@
+var _path;
+
+var _excluded = ["title", "titleId"];
+
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+
+import * as React from "react";
+
+function SvgUser(_ref, svgRef) {
+  var title = _ref.title,
+      titleId = _ref.titleId,
+      props = _objectWithoutProperties(_ref, _excluded);
+
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 24,
+    height: 24,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: svgRef,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _path || (_path = /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M12 4.5C10.3435 4.5 9 5.84346 9 7.5V8.25C9 9.90654 10.3435 11.25 12 11.25C13.6565 11.25 15 9.90654 15 8.25V7.5C15 5.84346 13.6565 4.5 12 4.5ZM7.5 7.5C7.5 5.01504 9.51504 3 12 3C14.485 3 16.5 5.01504 16.5 7.5V8.25C16.5 10.735 14.485 12.75 12 12.75C9.51504 12.75 7.5 10.735 7.5 8.25V7.5ZM6.50322 15.0654C7.95593 14.6689 9.96722 14.25 12 14.25C14.0327 14.25 16.0439 14.6688 17.4966 15.0653M6.50322 15.0654C4.87076 15.5102 3.75 16.9965 3.75 18.681V20.25C3.75 20.6642 4.08579 21 4.5 21H19.5C19.9142 21 20.25 20.6642 20.25 20.25V18.681C20.25 16.9965 19.129 15.5101 17.4966 15.0653M12 15.75C10.1539 15.75 8.28627 16.1336 6.898 16.5125C5.92521 16.7774 5.25 17.6657 5.25 18.681V19.5H18.75V18.681C18.75 17.6657 18.0752 16.7775 17.1024 16.5126C15.7142 16.1337 13.8461 15.75 12 15.75Z",
+    fill: "#EBEBF0"
+  })));
+}
+
+var ForwardRef = /*#__PURE__*/React.forwardRef(SvgUser);
+export default __webpack_public_path__ + "static/media/user.b658cbab.svg";
+export { ForwardRef as ReactComponent };

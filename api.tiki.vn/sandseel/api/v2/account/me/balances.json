@@ -1,0 +1,7 @@
+{
+  "totals": 9846,
+  "balances": [
+    { "currency": "asa", "balance": 16.77477462, "convertable_balance": 9846 },
+    { "currency": "xu", "balance": 0 }
+  ]
+}

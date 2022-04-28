@@ -1,0 +1,41 @@
+(self.__BUILD_MANIFEST = {
+  __rewrites: {
+    beforeFiles: [],
+    afterFiles: [],
+    fallback: [],
+  },
+  '/': ['static/chunks/pages/index-dfe49d1c3a01646fca2b.js'],
+  '/404': ['static/chunks/pages/404-173a182684671468a812.js'],
+  '/_error': ['static/chunks/pages/_error-70375524866f704e88d0.js'],
+  '/add-account': ['static/chunks/pages/add-account-c01a004d5e01e4a11d8d.js'],
+  '/consent': ['static/chunks/pages/consent-b4fe63bbcd3c5e8b3159.js'],
+  '/forgot-password': [
+    'static/chunks/pages/forgot-password-7feeb93846592a040ad3.js',
+  ],
+  '/google-login': ['static/chunks/pages/google-login-5bdeccffc6184f5eee35.js'],
+  '/login': ['static/chunks/pages/login-729f3f76e363f5eec9c5.js'],
+  '/oauth2/auth': ['static/chunks/pages/oauth2/auth-c105b7d4989d2767fb84.js'],
+  '/oauth2/logout': [
+    'static/chunks/pages/oauth2/logout-1ad0f50be83f4cc2efe9.js',
+  ],
+  '/reset-password': [
+    'static/chunks/pages/reset-password-2f00ebda040240ca1a26.js',
+  ],
+  '/zalo-login': ['static/chunks/pages/zalo-login-6a6699f266ee24f5a1aa.js'],
+  sortedPages: [
+    '/',
+    '/404',
+    '/_app',
+    '/_error',
+    '/add-account',
+    '/consent',
+    '/forgot-password',
+    '/google-login',
+    '/login',
+    '/oauth2/auth',
+    '/oauth2/logout',
+    '/reset-password',
+    '/zalo-login',
+  ],
+}),
+  self.__BUILD_MANIFEST_CB && self.__BUILD_MANIFEST_CB();
